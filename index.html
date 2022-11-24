@@ -1,27 +1,141 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Example</title>
+        <meta name="viewport" content="width=device-width, inital scale 1.0">
+        <title>Website Design Development</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
+    <!-- <body>
+        <section class="container">
+            <div class="navbar">
+                <navhome>
+                    <ul>
+                        <li><a href="">НЕ_ПУПЫРКА.РУ</a></li>
+                    </ul>
+                </navhome>
+                <nav>
+                    <i class="fa fa-times"></i>
+                    <ul>
+                        <li><a href="">O HAC</a></li>
+                        <li><a href="">СКИДКИ</a></li>
+                        <li><a href="">КОНТАКТЫ</a></li>
+                    </ul>
+                </nav>
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1>POP IT!</h1>
+                    <p>Лучшая игрушка-антистресс - бесконечная пупырчатая пленка!</p>
+                    <a href="" class="hero-btn">КУПИТЬ</a>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+        </section>
+    </body> -->
     <body>
-        <p>Hai.</p>
-        <h2>Background Image</h2>
+        <section class="header">
+            <nav>
+                <a href="" class="nav-home">НЕ_ПУПЫРКА.РУ</a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">O HAC</a></li>
+                        <li><a href="">СКИДКИ</a></li>
+                        <li><a href="">КОНТАКТЫ</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class= "row">
+                <div class="col">
+                    <h1>POP IT!</h1>
+                    <p>Лучшая игрушка-антистресс - бесконечная пупырчатая пленка!</p>
+                    <a href="" class="hero-btn">КУПИТЬ</a>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+        </section>
 
-        <p>A background image for a p element:</p>
+        <!-- Text box -->
 
-        <p style="background-image: url('./images/background.png');">
-        You can specify background images<br>
-        Лучшая игрушка-антистресс - бесконечная пупырчатая пленка!<br>
-        POP IT!<br>
-        In this example, the background image<br>
-        is specified for a p element.<br>
-        By default, the background-image<br>
-        will repeat itself in the direction(s)<br>
-        where it is smaller than the element<br>
-        where it is specified. (Try resizing the<br>
-        browser window to see how the<br>
-        background image behaves.
-        </p>
-        <img src="./images/amongus.png">
+        <section class="text-box">
+                <h2>Что такое Pop it?</h2>
+                <p>Pon it лословно переволится как «лопни это». Это летская игоа, поопесс в которой можно соавнить
+                    с лопанием возлушно-пузыочатои упаковочнои пленки. по в отличии от пленки поп-иты можно
+                    давить с характерными ощущениями и звуками «бесконечно»: десятки силиконовых пузырей просто выдавливаются в другую сторону.
+                </p>
+        </section>
+
+        <!-- product -->
+
+        <section class="product">
+            <h2>Что такое Pop it?</h2>
+            <div class= "product-row">
+                <div class="product-col">
+                    <img src="./images/square.png"></a>
+                    <h6>Разноцветный кваратный</h6>
+                    <a href="" class="hero-btn-prod">КУПИТЬ</a>
+                </div>
+                <div class="product-col">
+                    <img src="./images/amongus.png"></a>
+                    <h6>Разноцветный кваратный</h6>
+                    <a href="" class="hero-btn-prod">КУПИТЬ</a>
+                </div>
+                <div class="product-col">
+                    <img src="./images/round.png">
+                    <h6>Разноцветный кваратный</h6>
+                    <a href="" class="hero-btn-prod">КУПИТЬ</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- end section -->
+
+        <section class="info">
+            <div class= "info-row">
+                <div class="info-col">
+                    <h2>Правила игры</h2>
+                    <p>
+                        Игооки холат по очерели и нажимают на пупыоки Нужно обазательно заканчивать ряд который начали. Нажимать можно максимум на 3 пупырки одновременно (обязательно полжны быть балом. нельзя нажимать сразу несколько пупырок, если они не находятся впоитык) Задача слелать так, чтобь сопеоник схолил послелним. кто холил поспелним - тот пооигоал!
+                    </p>
+                </div>
+                <div class="info-col">
+                    <img src="./images/photo.jpg"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+
+        <section class="footer">
+            <footer>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="">НЕ_ПУПЫРКА.РУ</a></li>
+                        <li><a href="">Способы оплаты</a></li>
+                        <li><a href="">Доставка</a></li>
+                        <li><a href="">Опт</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </section>
+
+
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px ";
+    }
+</script>
+
     </body>
 </html>
